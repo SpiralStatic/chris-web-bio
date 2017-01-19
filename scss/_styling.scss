@@ -1,0 +1,17 @@
+.top-bar {
+    text-align: center;
+}
+
+// Change the breadcrumb icon
+ul.breadcrumbs {
+    display: inline-block;
+
+    li:before {
+        content: "➥";
+        margin-right: 10px;
+        color: #aaa;
+    }
+    li:first-child:before {
+        content: " ";
+    }
+}
