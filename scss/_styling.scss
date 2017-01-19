@@ -7,6 +7,11 @@ nav.top-bar-right {
     ul.breadcrumbs {
         display: inline-block;
 
+        li {
+            a {
+                font-size: 0.8em;
+            }
+        }
         li:before {
             content: "➥";
             margin-right: 8px;
@@ -23,8 +28,7 @@ div.media-object-section {
     text-align: center;
 
     div.pic-container {
-                margin-top: 10%;
-        width: 50%;
+        width: 66.66%;
         border-radius: 50%;
 
         img#bio-pic {
@@ -32,4 +36,12 @@ div.media-object-section {
             border-radius: 50%;
         }
     }
+}
+
+div.columns {
+    padding: 0;
+}
+
+div.row {
+    margin: 5% 5%;
 }
