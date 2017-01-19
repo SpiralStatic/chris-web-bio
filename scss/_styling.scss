@@ -78,6 +78,10 @@ footer {
     ul.menu {
         text-align: center;
 
+        li {
+            display: inline-block;
+        }
+        
         .icons {
             font-size: 2rem;
         }
