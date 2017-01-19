@@ -2,16 +2,19 @@
     text-align: center;
 }
 
-// Change the breadcrumb icon
-ul.breadcrumbs {
-    display: inline-block;
+// Change the breadcrumb object
+nav.top-bar-right {
+    ul.breadcrumbs {
+        display: inline-block;
 
-    li:before {
-        content: "➥";
-        margin-right: 10px;
-        color: #aaa;
-    }
-    li:first-child:before {
-        content: " ";
+        li:before {
+            content: "➥";
+            margin-right: 8px;
+            color: #aaa;
+        }
+
+        li:first-child:before {
+            content: " ";
+        }
     }
 }
