@@ -47,7 +47,6 @@ div.row {
 }
 
 // Parallax
-
 .parallax {
     perspective: 1px;
     height: 100vh;
@@ -72,4 +71,35 @@ div.row {
 
 .parallax-layer--back {
     transform: translateZ(-4px) scale(2);
+}
+
+// Icons
+footer {
+    ul.menu {
+        text-align: center;
+
+        .icons {
+            font-size: 2rem;
+        }
+
+        .fi-social-github {
+            color: $black;
+        }
+
+        .fi-mail {
+            color: $alert-color;
+        }
+
+        .fi-social-linkedin {
+            color: $primary-color;
+        }
+
+        .fi-social-medium {
+            color: $success-color;
+        }
+
+        .fi-social-facebook {
+            color: $primary-color;
+        }
+    }
 }
