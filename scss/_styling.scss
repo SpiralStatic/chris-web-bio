@@ -1,113 +1,119 @@
-.top-bar {
-    text-align: center;
-}
+body {
+    margin: 3%;
 
-.sticky {
-    width: 100%;
-}
+    .top-bar {
+        text-align: center;
+    }
 
-// Change the breadcrumb object
-nav.top-bar-right {
-    ul.breadcrumbs {
-        display: inline-block;
+    .sticky {
+        width: 100%;
+    }
 
-        li {
-            a {
-                font-size: 0.8em;
+    // Change the breadcrumb object
+    nav.top-bar-right {
+        ul.breadcrumbs {
+            display: inline-block;
+
+            li {
+                a {
+                    font-size: 0.8em;
+                }
+            }
+            li:before {
+                content: "➥";
+                margin-right: 8px;
+                color: #aaa;
+            }
+
+            li:first-child:before {
+                content: " ";
             }
         }
-        li:before {
-            content: "➥";
-            margin-right: 8px;
-            color: #aaa;
-        }
-
-        li:first-child:before {
-            content: " ";
-        }
     }
-}
 
-div.media-object-section {
-    text-align: center;
-
-    div.pic-container {
-        width: 66.66%;
-        border-radius: 50%;
-
-        img#bio-pic {
-            max-width: 100%;
-            border-radius: 50%;
-        }
-    }
-}
-
-div.columns {
-    padding: 0;
-}
-
-div.row {
-    margin: 3% 3%;
-}
-
-// Parallax
-.parallax {
-    perspective: 1px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective-origin-x: 100%;
-    background: url('../ignasi_pattern_s.png');
-}
-
-.parallax-layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform-origin-x: 100%;
-}
-
-.parallax-layer--base {
-    transform: translateZ(0);
-}
-
-.parallax-layer--back {
-    transform: translateZ(-4px) scale(2);
-}
-
-// Icons
-footer {
-    ul.menu {
+    div.media-object-section {
         text-align: center;
 
-        li {
-            display: inline-block;
-        }
+        div.pic-container {
+            width: 66.66%;
+            border-radius: 50%;
 
-        .icons {
-            font-size: 2rem;
-        }
-
-        .fi-social-github {
-            color: $black;
-        }
-
-        .fi-mail {
-            color: $alert-color;
-        }
-
-        .fi-social-linkedin {
-            color: $primary-color;
-        }
-
-        .fi-social-medium {
-            color: $success-color;
-        }
-
-        .fi-social-facebook {
-            color: $primary-color;
+            img#bio-pic {
+                max-width: 100%;
+                border-radius: 50%;
+            }
         }
     }
+
+    div.columns {
+        padding: 0;
+    }
+    
+    main {
+        div.row {
+            padding-top: 5%;
+        }
+    }
+
+    // Parallax
+    .parallax {
+        perspective: 1px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective-origin-x: 100%;
+        background: url('../ignasi_pattern_s.png');
+    }
+
+    .parallax-layer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin-x: 100%;
+    }
+
+    .parallax-layer--base {
+        transform: translateZ(0);
+    }
+
+    .parallax-layer--back {
+        transform: translateZ(-4px) scale(2);
+    }
+
+    // Icons
+    footer {
+        ul.menu {
+            text-align: center;
+
+            li {
+                display: inline-block;
+            }
+
+            .icons {
+                font-size: 2rem;
+            }
+
+            .fi-social-github {
+                color: $black;
+            }
+
+            .fi-mail {
+                color: $alert-color;
+            }
+
+            .fi-social-linkedin {
+                color: $primary-color;
+            }
+
+            .fi-social-medium {
+                color: $success-color;
+            }
+
+            .fi-social-facebook {
+                color: $primary-color;
+            }
+        }
+}
 }
