@@ -18,3 +18,13 @@ nav.top-bar-right {
         }
     }
 }
+
+div.pic-container {
+    width: 50%;
+    border-radius: 50%;
+
+    img#bio-pic {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+}
