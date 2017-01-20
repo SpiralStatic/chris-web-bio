@@ -162,56 +162,42 @@ body {
             visibility: hidden;
         }
 
-        .cssanimations .cd-timeline-img.bounce-in {
+        .cssanimations .cd-timeline-img.slide-in {
             visibility: visible;
-            animation: cd-bounce-1 0.6s;
+            animation: cd-slide 3s;
+            -webkit-animation: cd-slide 3s;
         }
 
-        @keyframes cd-bounce-1 {
-          0% {
-            opacity: 0;
-            transform: scale(0.5);
-          }
-
-          60% {
-            opacity: 1;
-            transform: scale(1.2);
-          }
-
-          100% {
-            transform: scale(1);
-          }
-        }
-
-        .cd-timeline-img {
-            animation: translate 3s;
-            animation-iteration-count: 1;
-            -webkit-animation: translate 3s; /* Safari & Chrome */
-            -webkit-animation-iteration-count: 1;
-            margin-left: 800px;
-            }
-
-            @keyframes translate {
+        @keyframes cd-slide {
             0%   { transform:  translate(0px, 0px);    }
             25%   { transform:  translate(-800px, 0px);   }
-            50%   { transform:  rotate(180deg);   }
+            50%   { transform:  translate(-400px, 0px);   }
             100%  { transform:  translate(0px, 0px);   }
-            }
-
-
-            @-webkit-keyframes translate {
-            0%   { -webkit-transform:  translate(0px, 0px) ;   }
-            25%   { -webkit-transform:  translate(-800px, 0px);   }
-            50%   { -webkit-transform:  rotate(180deg);   }
-            100%  { -webkit-transform:  translate(0px, 0px);   }
-            }
         }
+
+        @-webkit-keyframes cd-slide {
+            0%   { transform:  translate(0px, 0px);    }
+            25%   { transform:  translate(-800px, 0px);   }
+            50%   { transform:  translate(-400px, 0px);   }
+            100%  { transform:  translate(0px, 0px);   }
+        }
+    }
 }
 
 @media only screen and (min-width: 425px) {
     body {
         div.columns {
             min-height: 200px;
+        }
+
+        main {
+            div#social {
+                ul.menu {
+                    .icons {
+                        font-size: 3rem;
+                    }
+                }
+            }
         }
     }
 }
