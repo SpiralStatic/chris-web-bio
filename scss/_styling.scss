@@ -16,6 +16,11 @@ body {
             min-height: 0;
         }
 
+        .logo {
+            width: 300px;
+            padding: 1.2em;
+        }
+
         // Change the breadcrumb object
         nav.top-bar-right {
             ul.breadcrumbs {
@@ -23,9 +28,10 @@ body {
 
                 li {
                     a {
-                        font-size: 0.8em;
+                        font-size: 1.1em;
                     }
                 }
+
                 li:before {
                     content: "➥";
                     margin-right: 8px;
@@ -165,6 +171,25 @@ body {
 
 @media only screen and (min-width: 425px) {
     body {
+        header {
+            nav.top-bar-right {
+                ul.breadcrumbs {
+                    display: inline-block;
+                    padding-top: 2em;
+
+                    li {
+                        a {
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+
+            .logo {
+                margin-left: 10%;
+            }
+        }
+
         main {
             div#social {
                 ul.menu {
