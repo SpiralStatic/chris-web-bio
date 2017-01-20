@@ -123,8 +123,8 @@ body {
         }
     }
 
+/*
     #cd-timeline::before {
-      /* this is the vertical line */
       content: '';
       position: absolute;
       left: 50%;
@@ -133,13 +133,21 @@ body {
       width: 4px;
       background: $white;
       transform: scaleY(2);
-    }
+  }*/
 
-    .cd-timeline-block{
+    .cd-timeline-block {
         div {
             padding: 5%;
         }
 
+    }
+
+    .cd-timeline-content:nth-child(odd) {
+        border-right: 3px solid white;
+    }
+
+    .cd-timeline-content:nth-child(even) {
+        border-left: 3px solid white;
     }
 
     .cssanimations .cd-timeline-img.is-hidden {
@@ -169,7 +177,7 @@ body {
 
     @media only screen and (min-width: 640px) {
         #cd-timeline::before {
-
+            top: 150%;
         }
     }
 }
