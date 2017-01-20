@@ -2,6 +2,8 @@ body {
     margin: 3%;
 
     header {
+        z-index: 1;
+
         .top-bar {
             text-align: center;
         }
@@ -128,6 +130,7 @@ body {
 
     .parallax-layer--back {
         transform: translateZ(-1px) scale(2);
+        z-index: -1;
     }
 
     footer {
@@ -157,39 +160,11 @@ body {
             position: relative;
             border-left: 3px dashed white;
         }
-
-        .cssanimations .cd-timeline-img.is-hidden {
-            visibility: hidden;
-        }
-
-        .cssanimations .cd-timeline-img.slide-in {
-            visibility: visible;
-            animation: cd-slide 3s;
-            -webkit-animation: cd-slide 3s;
-        }
-
-        @keyframes cd-slide {
-            0%   { transform:  translate(0px, 0px);    }
-            25%   { transform:  translate(-800px, 0px);   }
-            50%   { transform:  translate(-400px, 0px);   }
-            100%  { transform:  translate(0px, 0px);   }
-        }
-
-        @-webkit-keyframes cd-slide {
-            0%   { transform:  translate(0px, 0px);    }
-            25%   { transform:  translate(-800px, 0px);   }
-            50%   { transform:  translate(-400px, 0px);   }
-            100%  { transform:  translate(0px, 0px);   }
-        }
     }
 }
 
 @media only screen and (min-width: 425px) {
     body {
-        div.columns {
-            min-height: 200px;
-        }
-
         main {
             div#social {
                 ul.menu {
@@ -197,6 +172,9 @@ body {
                         font-size: 3rem;
                     }
                 }
+            }
+            div.columns {
+                min-height: 200px;
             }
         }
     }
