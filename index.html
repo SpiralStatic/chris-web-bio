@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
@@ -12,25 +12,22 @@
         <header data-sticky-container>
             <div class="row sticky" data-sticky data-options="marginTop: 0, marginLeft: 0, marginRight: 0">
                 <div class="top-bar small-centered">
-                    <div class="top-bar-left small-12 medium-3 large-3 columns">
+                    <div class="top-bar-left small-12 medium-2 large-2 columns">
                         <h4 class="menu-text">Christopher Tsoi</h4>
                     </div>
-                    <nav class="top-bar-right small-12 medium-9 large-9 columns">
+                    <nav class="top-bar-right small-12 medium-10 large-10 columns">
                         <ul class="breadcrumbs">
                             <li>
                                 <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#life">Skills</a>
+                                <a href="#life">Life</a>
                             </li>
                             <li>
                                 <a href="#skills">Skills</a>
                             </li>
                             <li>
                                 <a href="#experience">Experience</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -53,7 +50,7 @@
                                 </div>
                             </div>
 
-                            <footer class="small-12 medium-12 large-12 columns">
+                            <div id="social" class="small-12 medium-12 large-12 columns">
                                 <ul class="menu">
                                     <li>
                                         <a href="https://github.com/SpiralStatic">
@@ -81,7 +78,7 @@
                                         </a>
                                     </li>
                                 </ul>
-                            </footer>
+                            </div>
                         </div>
                     </div>
 
@@ -120,21 +117,10 @@
                         </div>
                     </div>
 
-                    <div class="small-12 medium-6 large-6 columns">
+                    <div class="small-12 medium-12 large-12 columns">
                         <div id="#experience" class="card">
                             <div class="card-divider">
                                 <h4>Experience</h4>
-                            </div>
-                            <div class="card-section">
-                                <p>It has an easy to override visual style, and is appropriately subdued.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="small-12 medium-6 large-6 columns">
-                        <div id="#contact" class="card">
-                            <div class="card-divider">
-                                <h4>Contact</h4>
                             </div>
                             <div class="card-section">
                                 <p>It has an easy to override visual style, and is appropriately subdued.</p>
@@ -147,9 +133,33 @@
             <div class="parallax-layer parallax-layer--back"></div>
         </main>
 
+        <footer id="#contact">
+            <div class="callout">
+                <h4>Contact</h4>
+                <ul class="accordion" data-accordion data-allow-all-closed="true" data-multi-expand="true">
+                    <li class="accordion-item is-active" data-accordion-item>
+                        <a href="#" class="accordion-title">Online</a>
+                        <div class="accordion-content" data-tab-content>
+                            I would start in the open state, due to using the `is-active` state class.
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Offline</a>
+                        <div class="accordion-content" data-tab-content>
+                            I would start in the open state, due to using the `is-active` state class.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/what-input/dist/what-input.js"></script>
         <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
         <script src="js/app.js"></script>
     </body>
+</html>
+</script>
+<script src="js/app.js"></script>
+</body>
 </html>
