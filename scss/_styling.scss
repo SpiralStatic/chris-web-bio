@@ -135,13 +135,25 @@ body {
     }
 
     .parallax-layer--back {
-        transform: translateZ(-1px) scale(2);
+        transform: translateZ(-2px) scale(4);
         z-index: -1;
     }
 
     footer {
-        ul.address {
-            list-style-type: none;
+        div.accordion-content {
+            p {
+                text-align: center;
+            }
+
+            ul {
+                list-style-type: none;
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    margin: 0 2%;
+                }
+            }
         }
     }
 
@@ -172,6 +184,8 @@ body {
 @media only screen and (min-width: 425px) {
     body {
         header {
+            margin: 0 5%;
+
             nav.top-bar-right {
                 ul.breadcrumbs {
                     display: inline-block;
@@ -183,10 +197,6 @@ body {
                         }
                     }
                 }
-            }
-
-            .logo {
-                margin-left: 10%;
             }
         }
 
