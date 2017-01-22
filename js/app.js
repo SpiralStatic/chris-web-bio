@@ -28,6 +28,13 @@ function trigger() {
             $('#lincoln').find('.cd-timeline-content').addClass('animated bounceInLeft');
             $('#lincoln').find('.cd-timeline-content').removeClass('is-hidden');
     }, { offset: '30%'});
+
+    $('#bedale').waypoint(function() {
+            $('#bedale').find('.cd-timeline-img').addClass('animated bounceInLeft');
+            $('#bedale').find('.cd-timeline-img').removeClass('is-hidden');
+            $('#bedale').find('.cd-timeline-content').addClass('animated bounceInRight');
+            $('#bedale').find('.cd-timeline-content').removeClass('is-hidden');
+    }, { offset: '30%'});
 }
 
 $(document).ready(function() {
