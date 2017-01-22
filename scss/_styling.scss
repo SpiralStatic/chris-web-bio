@@ -173,6 +173,11 @@ body {
 
         .cd-timeline-img {
             padding: 2%;
+
+            img {
+                max-width: 75%;
+                margin-left: 5%;
+            }
         }
 
         .cd-timeline-content:nth-child(odd) {
@@ -214,7 +219,7 @@ body {
                 }
             }
             div.columns {
-                min-height: 200px;
+                min-height: 400px;
             }
         }
     }
