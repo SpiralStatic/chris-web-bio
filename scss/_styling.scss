@@ -1,6 +1,14 @@
 body {
     margin: 3%;
 
+    h5 {
+        color: $secondary-color;
+    }
+
+    span.highlight {
+        color: $secondary-color;
+    }
+
     header {
         z-index: 1;
 
